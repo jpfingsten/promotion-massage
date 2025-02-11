@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ProMotion Sports Massage</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="hero-image">
+      <div class="overlay"></div>
+      <div class="nav-bar">
+        <div class="logo">
+          <img src="img/logo-white.png" alt="ProMotion Massage & Wellness logo" />
+        </div>
+        <div class="booking-btn">
+          <a href="https://www.massagebook.com/business/23276932/select-product?ncf_source=friendly_url&src=massagebook" class="cta-button" target="_blank">Book Now</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h2>Massage for Recovery, Performance, and Wellness</h2>
+      <p>At ProMotion Massage & Wellness, we focus on delivering measurable results to enhance well-being, performance and recovery. While we prioritize outcome-based techniques, we also integrate holistic wellness principles to ensure a balanced approach to your overall health.</p>
+      <a href="https://www.massagebook.com/business/23276932/select-product?ncf_source=friendly_url&src=massagebook" class="cta-button" target="_blank">Schedule Your Appointment</a>
+    </div>
+  </section>
+
+  <section class="benefits">
+    <div class="container">
+      <h2>Why Choose ProMotion?</h2>
+      <div class="benefit-item">
+        <img src="img/targeted-results.jpg" alt="Targeted Results">
+        <h3>Targeted Results</h3>
+        <p>Our massage techniques are designed to address specific issues, from muscle tension to injury recovery, ensuring you achieve your wellness goals.</p>
+      </div>
+      <div class="benefit-item">
+        <img src="img/holistic-balance.jpg" alt="Holistic Balance">
+        <h3>Holistic Balance</h3>
+        <p>While we focus on outcomes, we also incorporate holistic practices to promote overall fitness, helping you feel your best inside and out.</p>
+      </div>
+      <div class="benefit-item">
+        <img src="img/expert-care.jpg" alt="Expert Care">
+        <h3>Expert Care</h3>
+        <p>Our licensed therapists specialize in clinical massage and understand the unique needs of active individuals.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <div class="container">
+      <h2>What Our Clients Say</h2>
+      <div class="testimonial-slider">
+        <div class="testimonial active">
+          <p>"Makes adjustments to the service as needed. Not just a cookie cutter service. Amazing, and has helped me a lot."</p>
+          <p class="author">- Scott B.</p>
+        </div>
+        <div class="testimonial">
+          <p>"Darl is amazing, takes his time targeting problem areas."</p>
+          <p class="author">- Anita B.</p>
+        </div>
+        <div class="testimonial">
+          <p>"Don't hesitate. Book your appt now. Your body will thank you. Darl is an approachable and experienced pro. Five stars."</p>
+          <p class="author">- Lauren T.</p>
+        </div>
+        <div class="testimonial">
+          <p>"Heather's attention to detail unlocked years of chronic tension for me in a single session. Can't recommend her enough!"</p>
+          <p class="author">- Jasmine P.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 ProMotion Sports Massage. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Simple testimonial slider
+    let testimonials = document.querySelectorAll('.testimonial');
+    let currentTestimonial = 0;
+
+    function showTestimonial(index) {
+      testimonials.forEach((testimonial, i) => {
+        testimonial.classList.remove('active');
+        if (i === index) {
+          testimonial.classList.add('active');
+        }
+      });
+    }
+
+    function nextTestimonial() {
+      currentTestimonial = (currentTestimonial + 1) % testimonials.length;
+      showTestimonial(currentTestimonial);
+    }
+
+    setInterval(nextTestimonial, 5000); // Rotate every 5 seconds
+  </script>
+</body>
+</html>
