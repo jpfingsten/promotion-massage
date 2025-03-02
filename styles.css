@@ -143,6 +143,29 @@ body {
     color: #f6f6f6; /* Almost-White */
     font-size: 1.1rem;
   }
+
+  /* Bio Section */
+  .bio {
+    background-color: #FCD4A5; /* Lightest Orange */
+    padding: 40px 0;
+  }
+
+  .bio h2 {
+    color: #C67617; /* Darkest Orange */
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .bio .container {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .bio .bio-photo img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+  }
   
   /* Testimonials Section */
   .testimonials {
@@ -221,5 +244,29 @@ body {
     .hero-image .nav-bar {
       flex-direction: column;
       align-items: center;
+    }
+
+    .bio .container {
+      flex-direction: column;
+    }
+
+    .bio .bio-copy {
+      text-align: center;
+    }
+
+    .bio .bio-copy h2 {
+      margin-top: 0;
+    }
+
+    .bio .bio-photo img {
+      padding-top: 2rem;
+    }
+
+    .testimonials .booking-btn {
+      margin-top: 3rem;
+    }
+
+    .hero, .benefits, .bio, .testimonial {
+      padding-top: 0;
     }
   }
