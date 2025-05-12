@@ -133,9 +133,8 @@ header .overlay {
 }
 
 .benefit-item img {
-  width: 100%;
-  max-width: 400px;
-  height: 240px;
+  max-width: 100%;
+  height: auto;
   border-radius: 10px;
 }
 
@@ -165,6 +164,7 @@ header .overlay {
 .bio .container {
   display: flex;
   gap: 2rem;
+  align-items: center;
 }
 
 .bio .bio-photo {
