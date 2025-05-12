@@ -1,6 +1,17 @@
+/* Utility Classes */
+.pb-0 {
+  padding-bottom: 0px !important;
+}
+
 /* General Styles */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Mulish", sans-serif;
+  font-weight: 200;
   margin: 0;
   padding: 0;
   background-color: #ffffff;
@@ -31,7 +42,7 @@ header .overlay {
 }
 
 .hero-image {
-  background-image: url(img/runners.jpg);
+  background-image: url(img/hero.jpg);
   background-color: #1C5977; /* Midnight Blue */
   background-size: cover;
   background-position: center;
@@ -123,12 +134,13 @@ header .overlay {
   width: 30%;
   margin: 0 1.5%;
   vertical-align: top; /* Align columns to the top */
+  padding-bottom: 1rem;
 }
 
 .benefit-item img {
   width: 100%;
   max-width: 400px;
-  height: auto;
+  height: 240px;
   border-radius: 10px;
   margin-bottom: 15px;
 }
@@ -159,6 +171,14 @@ header .overlay {
 .bio .container {
   display: flex;
   gap: 2rem;
+}
+
+.bio .bio-photo {
+  width: 25%;
+}
+
+.bio .bio-copy {
+  width: 75%;
 }
 
 .bio .bio-photo img {
