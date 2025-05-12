@@ -1,8 +1,3 @@
-/* Utility Classes */
-.pb-0 {
-  padding-bottom: 0px !important;
-}
-
 /* General Styles */
 h1, h2, h3, h4, h5, h6 {
   font-family: "Poppins", sans-serif;
@@ -142,7 +137,6 @@ header .overlay {
   max-width: 400px;
   height: 240px;
   border-radius: 10px;
-  margin-bottom: 15px;
 }
 
 .benefit-item h3 {
@@ -220,7 +214,6 @@ header .overlay {
 
 .testimonial p {
   font-size: 1.2rem;
-  font-style: italic;
   margin-bottom: 10px;
 }
 
@@ -277,18 +270,21 @@ footer a:visited {
 
   .bio .container {
     flex-direction: column;
+    align-items: center;
   }
 
   .bio .bio-copy {
-    text-align: center;
+    width: 100%;
   }
 
   .bio .bio-copy h2 {
     margin-top: 0;
+    text-align: center;
   }
 
-  .bio .bio-photo img {
-    padding-top: 2rem;
+  .bio .bio-photo {
+    width: 80%;
+    margin-top: 2rem;
   }
 
   .testimonials .booking-btn {
