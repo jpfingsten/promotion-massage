@@ -295,3 +295,22 @@ footer a:visited {
     padding-top: 0;
   }
 }
+
+/* STAFF PAGE */
+
+.staff {
+  padding-top: 40px;
+}
+
+.staff .container {
+  padding-top: 20px;
+}
+
+.staff-header {
+  width: 100%;
+  max-width: 850px;
+  margin: auto;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #1C5977; /* Midnight Blue */
+}
