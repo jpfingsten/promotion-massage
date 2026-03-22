@@ -1,4 +1,30 @@
 /* General Styles */
+
+/* PROMOTION MASSAGE BRAND COLORS */
+:root {
+  --pm-black: #1D1E1E; /* Almost-Black */
+  --pm-white: #f6f6f6; /* Almost-White */
+
+  --pm-dark-blue-1: #1c5977; /* Midnight Blue */
+  --pm-dark-blue-2: #16475f;
+  --pm-dark-blue-3: #113547;
+  --pm-dark-blue-4: #0b2430;
+  --pm-med-blue-1: #3983a0; /* Stone Blue */
+  --pm-med-blue-2: #4a6cbd; 
+  --pm-med-blue-3: #8ea3b8; 
+  --pm-med-blue-4: #d2dae2; 
+  --pm-orange-1: #f7941d; /* Orange */
+  --pm-orange-2: #f9a94a;
+  --pm-orange-3: #fcd4a5;
+  --pm-orange-4: #c67617;
+  --pm-gray-1: #58595b; /* Smoke */
+  --pm-gray-2: #797a7c;
+  --pm-gray-3: #acacad;
+  --pm-purple-1: #803861; /* Eggplant */
+  --pm-purple-2: #996081;
+  --pm-purple-3: #c09cb0;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
@@ -10,7 +36,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #ffffff;
-  color: #1D1E1E; /* Almost-Black */
+  color: var(--pm-black);
   line-height: 1.6;
 }
 
@@ -32,13 +58,14 @@ header .overlay {
   height: 400px;
   width: 100vw;
   z-index: 2;
-  background-color: #1C597777; /* Midnight Blue */
+  background-color: var(--pm-dark-blue-1);
+  opacity: 77%;
   position: absolute;
 }
 
 .hero-image {
   background-image: url(img/hero.jpg);
-  background-color: #1C5977; /* Midnight Blue */
+  background-color: var(--pm-dark-blue-1);
   background-size: cover;
   background-position: center;
   height: 400px;
@@ -107,7 +134,7 @@ header .overlay {
 }
 
 .hero h2 {
-  color: #1C5977; /* Midnight Blue */
+  color: var(--pm-dark-blue-1);
   font-size: 2rem;
   margin-bottom: 20px;
 }
@@ -118,7 +145,7 @@ header .overlay {
 }
 
 .cta-button {
-  background-color: #F7941D; /* Orange */
+  background-color: var(--pm-orange-1);
   color: #ffffff;
   padding: 15px 30px;
   text-decoration: none;
@@ -128,18 +155,18 @@ header .overlay {
 }
 
 .cta-button:hover {
-  background-color: #CC5500; /* Slightly Darker Orange */
+  background-color: var(--pm-orange-4);
 }
 
 /* Benefits Section */
 .benefits {
-  background-color: #1C5977; /* Midnight Blue */
+  background-color: var(--pm-dark-blue-1);
   padding: 40px 0;
   text-align: center;
 }
 
 .benefits h2 {
-  color: #f6f6f6; /* Almost-White */
+  color: var(--pm-white);
   font-size: 2rem;
   margin-bottom: 40px;
 }
@@ -159,24 +186,24 @@ header .overlay {
 }
 
 .benefit-item h3 {
-  color: #F7941D; /* Orange */
+  color: var(--pm-orange-1);
   font-size: 1.5rem;
   margin-bottom: 10px;
 }
 
 .benefit-item p {
-  color: #f6f6f6; /* Almost-White */
+  color: var(--pm-white);
   font-size: 1.1rem;
 }
 
 /* Bio Section */
 .bio {
-  background-color: #FCD4A5; /* Lightest Orange */
+  background-color: var(--pm-orange-3);
   padding: 40px 0;
 }
 
 .bio h2 {
-  color: #C67617; /* Darkest Orange */
+  color: var(--pm-orange-4);
   font-size: 2rem;
   margin-bottom: 20px;
 }
@@ -209,7 +236,7 @@ header .overlay {
 }
 
 .testimonials h2 {
-  color: #1C5977; /* Midnight Blue */
+  color: var(--pm-dark-blue-1);
   font-size: 2rem;
   margin-bottom: 40px;
 }
@@ -239,13 +266,13 @@ header .overlay {
 
 .testimonial .author {
   font-weight: bold;
-  color: #F7941D; /* Orange */
+  color: var(--pm-orange-1);
 }
 
 /* Footer */
 footer {
-  background-color: #1C5977; /* Midnight Blue */
-  color: #f6f6f6; /* Almost-White */
+  background-color: var(--pm-dark-blue-1);
+  color: var(--pm-white);
   text-align: center;
   padding: 20px 0;
 }
@@ -257,11 +284,11 @@ footer p {
 
 footer a {
   font-size: .9rem;
-  color: #f6f6f6; /* Almost-White */
+  color: var(--pm-white);
 }
 
 footer a:visited {
-  color: #8ea3b8; /* Lighter Midnight Blue */
+  color: var(--pm-med-blue-3);
 }
 
 /* Responsive Design */
@@ -337,5 +364,39 @@ footer a:visited {
   margin: auto;
   font-size: 2rem;
   margin-bottom: 20px;
-  color: #1C5977; /* Midnight Blue */
+  color: var(--pm-dark-blue-1);
+}
+
+/* CONTACT PAGE */
+
+.contact .container {
+  display: flex;
+  gap: 24px;
+}
+
+.contact .container .contact-form,
+.contact .container .contact-map {
+  flex: 1;
+}
+
+.contact .contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact .contact-form form label {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 0;
+}
+
+.contact .contact-form input,
+.contact .contact-form textarea {
+  border: 1px solid var(--pm-gray-3);
+  border-radius: 4px;
+  padding: 8px;
+}
+
+.contact .contact-form button {
+  padding: 4px;
 }
