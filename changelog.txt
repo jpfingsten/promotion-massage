@@ -1,0 +1,7 @@
+3.22.26
+- Removed "Wellness" from page titles, meta data, and copy descriptions
+- Launched "Contact" page
+
+TODO: Remove padding/margin above and below Bio copy on home page
+TODO: Make lower resolutions of images that will load faster
+TODO: Create collapsible menu for mobile
