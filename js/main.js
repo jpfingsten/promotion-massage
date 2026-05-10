@@ -1,8 +1,10 @@
+const announcement = document.getElementById('announcement');
 const form = document.getElementById('form');
 const result = document.getElementById('result');
 
 // Clear contact form when user returns to the page
 window.onload = function () {
+    announcement.showModal();
     form.reset();
 };
 

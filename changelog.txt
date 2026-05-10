@@ -1,8 +1,13 @@
 3.22.26
 - Removed "Wellness" from page titles, meta data, and copy descriptions
 - Launched "Contact" page
+5.10.26
+- Add modal announcing personal training to index.html
 
 TODO: Move Contact page into its own JS file to remove errors from console
 TODO: Remove padding/margin above and below Bio copy on home page
 TODO: Make lower resolutions of images that will load faster
 TODO: Create collapsible menu for mobile
+TODO: Convert all buttons to actual buttons so semantics are better and to avoid "padding collapse"
+TODO: Update with new testimonials
+TODO: Set up modal so that it only shows on the first visit/once every 24 hours.

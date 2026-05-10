@@ -1,4 +1,5 @@
 /* PROMOTION MASSAGE BRAND COLORS */
+
 :root {
   --pm-black: #1D1E1E; /* Almost-Black */
   --pm-white: #f6f6f6; /* Almost-White */
@@ -23,7 +24,19 @@
   --pm-purple-3: #c09cb0;
 }
 
-/* General Styles */
+/* KEYFRAMES */
+
+@keyframes blowUpModal {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* GENERAL CSS STYLES */
 
 .nowrap {
   white-space: nowrap;
@@ -56,6 +69,38 @@ header {
   position: relative;
   text-align: center;
   color: #ffffff;
+}
+
+#announcement {
+  z-index: 3;
+  margin: auto;
+  border: none;
+  border-radius: 5px;
+  padding: 20px;
+  max-width: 80vw;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  animation: blowUpModal 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+#announcement::backdrop {
+  background-color: var(--pm-dark-blue-1);
+  opacity: 25%;
+}
+
+.announcement-title {
+  margin: 0;
+  text-align: center;
+  color: var(--pm-orange-1);
+}
+
+.announcement-copy {
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.announcement-btn {
+  text-align: center;
+  padding-bottom: 12px;
 }
 
 header .overlay {
