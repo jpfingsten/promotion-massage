@@ -2,9 +2,19 @@ const announcement = document.getElementById('announcement');
 const form = document.getElementById('form');
 const result = document.getElementById('result');
 
-// Clear contact form when user returns to the page
+
 window.onload = function () {
-    announcement.showModal();
+    // Show announcement modal to first-time visitors or anyone who visited more than 24 hours ago
+    const now = new Date().getTime();
+    const modalTimestamp = localStorage.getItem("modalTimestamp");
+    const timeDiff = now - modalTimestamp;
+
+    if (!modalTimestamp || timeDiff > 86400000) {
+        announcement.showModal();
+        localStorage.setItem("modalTimestamp", now);
+    };
+
+    // Clear contact form when user returns to the page
     form.reset();
 };
 
